@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePlus</title>
+    <link rel="icon" href="1+icon.jfif" type="image/gif">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #firstimg {
+            position: relative;
+            width: 140%;
+            height: 375px;
+
+
+        }
+
+        .begin-container {
+            position: relative;
+        }
+
+        .text-block-begin {
+            position: absolute;
+            top: 50;
+            left: 300px;
+
+
+            color: black;
+
+            text-align: left;
+            justify-content: center;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #666;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.2s;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+            box-shadow: tomato;
+            border-bottom: 4px solid rgb(184, 219, 221);
+        }
+
+
+        #download {
+            transition-property: all;
+        }
+
+        #download:hover {
+            letter-spacing: 0.5px;
+            transition-duration: 0.2s;
+            color: purple;
+
+        }
+
+        .begin-container {
+            display: flex;
+            flex-direction: column;
+            height: 325px;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            background-color: lightsteelblue;
+
+        }
+
+
+        .button {
+            background-color: lavender;
+            border: 0.5px solid black;
+            color: black;
+            padding: 13px 30px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            border: 1.6px solid black;
+            background-color: rgb(217, 217, 245);
+        }
+
+
+        .imgcontainer {
+            position: relative;
+
+        }
+
+
+
+        .text-block {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            opacity: 0.69;
+            background-color: lavender;
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 10px;
+            height: 200px;
+            width: 500px;
+            padding-top: 45px;
+            padding-bottom: 15px;
+        }
+
+        .imgcontainer2 {
+            position: relative;
+        }
+
+
+        .text-block2 {
+            position: absolute;
+            opacity: 0.65;
+            left: 100px;
+            bottom: 250px;
+            background-color: lavender;
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 10px;
+            height: 200px;
+            width: 500px;
+            padding-top: 45px;
+            padding-bottom: 15px;
+        }
+
+        .email {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(210, 234, 243);
+            display: block;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        input {
+            height: 40px;
+            width: 200px;
+            cursor: pointer;
+            background-color: rgb(210, 234, 243);
+            border: none;
+            border-bottom: 0.5px solid black;
+
+        }
+
+        input:focus {
+            outline: none;
+            font-size: medium;
+            color: rgb(34, 33, 33);
+        }
+
+        ::placeholder {
+            border: none;
+            font-size: 15px;
+
+        }
+
+        .emailbutton {
+            background-color: rgb(210, 234, 243);
+            border: 0.5px solid black;
+            color: black;
+            padding: 13px 30px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .emailbutton:hover {
+            border: 1.6px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div id="top" class="begin-container">
+        <img id="firstimg" src="oneplus.jpg" alt="app" style="height:320px" width=:100%>
+        <div class="text-block-begin">
+            <span style="font-size: 30px;">OnePlus Store App</span><br><br>
+            Win OnePlus Products Daily<br>
+            Avail Exclusive Offers & Shop<br><br><br>
+            <a href="#" style="justify-content: left; text-decoration: none;" id="download" >Download Now </a>
+        </div>
+    </div>
+
+
+    <div class="imgcontainer">
+        <img src="pexels-silvie-lindemann-63690.jpg" alt="oneplus 8 pro" style="width:100%; height:700px">
+        <div class="text-block">
+            <span style="font-weight: lighter; font-size: xx-large;">OnePlus 8 Pro<br></span>
+            Never Settle <br><br>
+            Rs. 56,000
+
+            <p> <button class="button">Buy Now</button></p>
+        </div>
+    </div>
+
+    <div class="imgcontainer2">
+        <img src="pexels-silvie-lindemann-63690.jpg" alt="oneplus buds" style="width:100%; height:700px">
+        <div class="text-block2">
+            <span style="font-weight: lighter; font-size: xx-large;">OnePlus Buds Z<br></span>
+            Go with the flow and set your music free <br><br>
+            Rs. 3,699
+
+            <p> <button class="button">Buy Now</button></p>
+        </div>
+    </div><br>
+    <div class="email">
+
+        <span style="font-size: 35px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            Always be the first to know.</span><br>
+        Sign up for our newsletter!
+        <br><br>
+        <input type="email" placeholder="Email address">
+        <br><br>
+        <p><button class="emailbutton" type="submit">Subscribe</button>
+    </div>
+    <p>
+
+        </div>
+
+
+</body>
+
+</html>

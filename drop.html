@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(12, 14, 17);
+            animation: back 3s 3s linear forwards;
+         
+        }
+
+        @keyframes back {
+            50% {
+                background-color: rgba(75, 122, 173, 1);
+                /* opacity: 0.5; */
+            }
+
+            100% {
+                background-color: rgba(75, 122, 173, 1);
+                background: linear-gradient(180deg, rgba(75, 122, 173, 1) 0%, rgba(21, 131, 205, 1) 56%, rgba(0, 212, 255, 1) 100%);
+            }
+        }
+
+
+        .soil {
+            height: 160px;
+            width: 100%;
+            /* background-color: rgb(51, 33, 33); */
+            margin-top: 80vh;
+            background: linear-gradient(bottom, rgba(0,25,45,1) 0%,rgba(14,71,117,1) 35%, rgba(26,126,174,1) 70%, rgba(62,168,220,1) 100%); 
+            animation: soil 3s 3s linear forwards;
+        }
+
+        @keyframes soil {
+            0% {
+                background-color: rgb(51, 33, 33);
+            }
+
+            100% {
+                background-color: rgb(120, 88, 61);
+            }
+        }
+
+        .drop {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(90, 133, 199);
+            border-radius: 33px 2px 33px 33px;
+            transform: rotate(-45deg);
+            margin-left: 50%;
+            animation: fall 2.2s linear forwards;
+
+
+        }
+
+        @keyframes fall {
+            0% {
+                top: -200px;
+                opacity: 1
+            }
+
+            90% {
+                top: 73vh;
+                opacity: 1;
+            }
+
+            100% {
+                top: 81vh;
+                opacity: 0;
+            }
+        }
+
+        .moon {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: silver;
+            z-index: 2;
+            filter: brightness(200%);
+            filter: saturate(150%);
+            top: 0.5%;
+            box-shadow: 0 0 25px silver,
+                0 0 50px silver,
+                0 0 100px silver,
+                0 0 130px silver;
+
+            animation: day 3s 3s forwards;
+
+
+        }
+
+        @keyframes day {
+            0% {
+                /* background-color: rgb(233, 213, 104); */
+                opacity: 0.9;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .stars div:nth-child(n) {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            /* background-color: silver;
+            border-radius: 50%;
+            height: 2px;
+            width: 2px; */
+            text-shadow: 1px 1px 6px silver;            
+            color:silver;
+            font-size: 8px;
+            /* box-shadow: 0 0 4px silver,
+                0 0 6px silver,
+                0 0 8px silver; */
+            animation: stars 3s 3s ease-out forwards;
+            z-index: 10;
+
+
+        }
+
+        @keyframes stars {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .stars div:nth-child(1) {
+            position: absolute;
+            top: 10%;
+            right: 64%;
+
+        }
+
+        .stars div:nth-child(2) {
+            position: absolute;
+            top: 10%;
+            right: 12%;
+
+        }
+
+        .stars div:nth-child(3) {
+            position: absolute;
+            top: 20%;
+            right: 30%;
+
+        }
+
+        .stars div:nth-child(4) {
+            position: absolute;
+            top: 30%;
+            right: 20%;
+
+        }
+
+        .stars div:nth-child(5) {
+            position: absolute;
+            top: 40%;
+            right: 40%;
+
+        }
+
+        .stars div:nth-child(6) {
+            position: absolute;
+            top: 50%;
+            right: 60%;
+
+        }
+
+        .stars div:nth-child(7) {
+            position: absolute;
+            top: 60%;
+            right: 34%;
+
+        }
+
+        .stars div:nth-child(8) {
+            position: absolute;
+            top: 63%;
+            right: 86%;
+
+        }
+
+        .stars div:nth-child(9) {
+            position: absolute;
+            top: 59%;
+            right: 23%;
+
+        }
+
+        .stars div:nth-child(10) {
+            position: absolute;
+            top: 33%;
+            right: 35%;
+
+        }
+
+        .stars div:nth-child(11) {
+            position: absolute;
+            top: 56%;
+            right: 88%;
+
+        }
+
+        .stars div:nth-child(12) {
+            position: absolute;
+            top: 75%;
+            right: 89%;
+
+        }
+
+        .stars div:nth-child(13) {
+            position: absolute;
+            top: 23%;
+            right: 56%;
+
+        }
+
+        .stars div:nth-child(14) {
+            position: absolute;
+            top: 19%;
+            right: 68%;
+
+        }
+
+        .stars div:nth-child(15) {
+            position: absolute;
+            top: 40%;
+            right: 67%;
+
+        }
+
+        .stars div:nth-child(16) {
+            position: absolute;
+            top: 66%;
+            right: 70%;
+
+        }
+
+        .stars div:nth-child(17) {
+            position: absolute;
+            top: 22%;
+            right: 55%;
+
+        }
+
+
+        .sun {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #fce043;
+            background: radial-gradient(circle, #f5d071, #eebe3a,rgb(253, 178, 37));
+            /* filter:saturate(120%);  */
+            top: 0.5%;
+            right: 0.5%;
+            box-shadow: 0 0 50px #f1b717,
+                0 0 100px #f1b717,
+                0 0 150px #f1b717,
+                0 0 200px #f1b717;
+
+            animation: night 3s 3.8s forwards;
+            opacity: 0;
+        }
+
+        @keyframes night {
+            0% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .wavy {
+            position: absolute;
+            font-size: xx-large;
+            color: white;
+            margin-top: -2.5%;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="moon"></div>
+    <div class="stars">
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+
+
+    </div>
+    <div class="sun"></div>
+    <div class="drop"></div>
+    <div class="wavy"></div>
+    <div class="soil"></div>
+
+
+</body>
+
+</html>
